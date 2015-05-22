@@ -75,13 +75,13 @@ make install
 cd ${ENVPATH}/soft/
 rm -rf libffi-3.2.1/
 
-tar xvf glib-2.44.0.tar.xz 
-cd glib-2.44.0/
-./configure 
+tar xvf glib-2.39.92.tar.xz 
+cd glib-2.39.92/
+./configure --prefix=/usr/local/glib
 make
 make install
-cd ${ENVPATH}/soft/
-rm -rf glib-2.44.0/
+cd /web/env/soft/
+rm -rf glib-2.39.92/
 
 tar zxvf zlib-1.2.8.tar.gz 
 cd zlib-1.2.8
@@ -93,7 +93,7 @@ rm -rf zlib-1.2.8/
 
 tar zxvf freetype-2.5.5.tar.gz 
 cd freetype-2.5.5
-./configure 
+./configure --prefix=/usr/local/freetype
 make
 make install
 cd ${ENVPATH}/soft/

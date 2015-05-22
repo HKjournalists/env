@@ -22,3 +22,6 @@ ln -s ${DEPLOYPATH}/etc/nexus/logback-access.xml /data/nexus/nexus-2.8.1-01/conf
 rm -rf /data/nexus/nexus-2.8.1-01/conf/nexus.properties
 ln -s ${DEPLOYPATH}/etc/nexus/nexus.properties /data/nexus/nexus-2.8.1-01/conf/nexus.properties
 
+rm -rf /data/nexus/sonatype-work/nexus/conf/logback.properties
+ln -s ${DEPLOYPATH}/etc/nexus/logback.properties /data/nexus/sonatype-work/nexus/conf/logback.properties
+

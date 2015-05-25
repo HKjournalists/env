@@ -1,12 +1,6 @@
 #!/bin/bash
 
-cd /web/deploy/
-DEPLOYPATH=`pwd`
-
-cd /web/env/
-ENVPATH=`pwd`
-
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 
 tar zxvf php-5.6.7.tar.gz
 cd php-5.6.7
@@ -43,9 +37,9 @@ cd php-5.6.7
 
 make
 make install
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 rm -rf php-5.6.7/
 
-ln -s ${DEPLOYPATH}/etc/php/php.ini /usr/local/php/etc/php.ini
-ln -s ${DEPLOYPATH}/etc/php/php-fpm.conf /usr/local/php/etc/php-fpm.conf
+ln -s /web/deploy/etc/php/php.ini /usr/local/php/etc/php.ini
+ln -s /web/deploy/etc/php/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 

@@ -1,11 +1,6 @@
 #!/bin/bash
 
-cd /web/deploy/
-DEPLOYPATH=`pwd`
-
-cd /web/env/
-ENVPATH=`pwd`
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 
 curl -sSL https://get.rvm.io | bash -s stable
 rvm get stable
@@ -24,7 +19,7 @@ CREATE DATABASE redmine CHARACTER SET utf8;
 CREATE USER 'redmine'@'localhost' IDENTIFIED BY 'my_password';
 GRANT ALL PRIVILEGES ON redmine.* TO 'redmine'@'localhost';
 
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 tar zxvf redmine-3.0.0.tar.gz
 mv redmine-3.0.0 /data/redmine
 cd /data/redmine

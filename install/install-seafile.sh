@@ -1,18 +1,13 @@
 #!/bin/bash
 
-cd /web/deploy/
-DEPLOYPATH=`pwd`
+mkdir -p /web/env/logs
 
-cd /web/env/
-ENVPATH=`pwd`
-mkdir -p ${ENVPATH}/logs
-
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 
 tar zxvf seafile-server_4.0.5_x86-64.tar.gz 
 rm -rf /data/seafile
 mkdir -p /data/seafile
-mv ${ENVPATH}/soft/seafile-server-4.0.5 /data/seafile/
+mv /web/env/soft/seafile-server-4.0.5 /data/seafile/
 cd /data/seafile/seafile-server-4.0.5
 sh setup-seafile-mysql.sh
 

@@ -1,11 +1,6 @@
 #!/bin/bash
 
-cd /web/deploy/
-DEPLOYPATH=`pwd`
-
-cd /web/env/
-ENVPATH=`pwd`
-cd ${ENVPATH}/soft/
+cd /web/env/soft/
 
 rm -rf /data/zentaopms
 unzip ZenTaoPMS.7.1.stable.zip

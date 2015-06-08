@@ -86,4 +86,10 @@ python setup.py install
 cd /web/env/soft/
 rm -rf tld-0.6.1/
 
+tar zxvf httpagentparser-1.7.7.tar.gz
+cd httpagentparser-1.7.7/
+python setup.py install
+cd /web/env/soft/
+rm -rf httpagentparser-1.7.7/
+
 

@@ -25,6 +25,7 @@ make
 make install
 cd /web/env/soft/
 rm -rf pcre-8.32/
+ln -s /lib64/libpcre.so.0.0.1 /lib64/libpcre.so.1
 
 tar zxvf httpd-2.4.12.tar.gz 
 cd httpd-2.4.12/

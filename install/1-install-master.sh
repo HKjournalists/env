@@ -136,7 +136,7 @@ cd curl-7.44.0
 make
 make install
 cd /web/env/soft/
-rm -rf bzip2-1.0.6/
+rm -rf curl-7.44.0/
 
 tar zxvf openssl-1.0.1p.tar.gz 
 cd openssl-1.0.1p

@@ -18,6 +18,7 @@ ln -s /web/deploy/etc/nexus/logback-access.xml /data/nexus/nexus-2.8.1-01/conf/l
 rm -rf /data/nexus/nexus-2.8.1-01/conf/nexus.properties
 ln -s /web/deploy/etc/nexus/nexus.properties /data/nexus/nexus-2.8.1-01/conf/nexus.properties
 
+mkdir -p /data/nexus/sonatype-work/nexus/conf/
 rm -rf /data/nexus/sonatype-work/nexus/conf/logback.properties
 ln -s /web/deploy/etc/nexus/logback.properties /data/nexus/sonatype-work/nexus/conf/logback.properties
 

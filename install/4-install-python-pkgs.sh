@@ -2,13 +2,13 @@
 
 cd /web/env/soft/
 
-tar zxvf tornado-2.4.1.tar.gz
-cd tornado-2.4.1/
+tar zxvf tornado-4.2.1.tar.gz
+cd tornado-4.2.1/
 python setup.py build
 python setup.py install
 cd ../
 cd /web/env/soft/
-rm -rf tornado-2.4.1/
+rm -rf tornado-4.2.1/
 
 tar zxvf python-memcached-1.31.tar.gz 
 cd python-memcached-1.31/
@@ -99,3 +99,30 @@ python setup.py install
 cd /web/env/soft/
 rm -rf kennethreitz-requests-2440b6f
 
+tar zxvf sqlalchemy-migrate-0.10.0.tar.gz
+cd sqlalchemy-migrate-0.10.0
+python setup.py build
+python setup.py install
+cd /web/env/soft/
+rm -rf sqlalchemy-migrate-0.10.0
+
+tar zxvf xlrd-0.9.4.tar.gz
+cd xlrd-0.9.4
+python setup.py build
+python setup.py install
+cd /web/env/soft/
+rm -rf xlrd-0.9.4
+
+tar zxvf qrcode-5.1.tar.gz
+cd qrcode-5.1
+python setup.py build
+python setup.py install
+cd /web/env/soft/
+rm -rf qrcode-5.1
+
+tar zxvf skip32-1.6.tar.gz
+cd skip32-1.6
+python setup.py build
+python setup.py install
+cd /web/env/soft/
+rm -rf skip32-1.6

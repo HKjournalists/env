@@ -28,11 +28,11 @@ python setup.py install
 cd /web/env/soft/
 rm -rf psycopg2-2.5/
 
-tar zxvf pymongo-2.5.tar.gz 
-cd pymongo-2.5/
+tar zxvf pymongo-3.0.3.tar.gz 
+cd pymongo-3.0.3/
 python setup.py install
 cd /web/env/soft/
-rm -rf pymongo-2.5/
+rm -rf pymongo-3.0.3/
 
 tar zxvf simplejson-3.5.3.tar.gz 
 cd simplejson-3.5.3/

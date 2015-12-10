@@ -25,5 +25,5 @@ ln -s /usr/local/mysql/lib/libmysqlclient.so.18 /usr/lib/libmysqlclient.so.18
 ldconfig
 
 rm -rf /etc/my.cnf
-ln -s /web/deploy/etc/my.cnf /etc/my.cnf
+ln -s /web/deploy/server1/etc/my.cnf /etc/my.cnf
 

@@ -56,7 +56,7 @@ cd /web/env/soft/
 rm -rf FastDFS/
 
 rm -rf /etc/fdfs
-ln -s /web/deploy/etc/fdfs /etc/fdfs
+ln -s /web/deploy/server0/etc/fdfs /etc/fdfs
 
 #------ nginx with fastdfs_module and openssl_module --------
 
@@ -75,17 +75,17 @@ rm -rf fastdfs-nginx-module/
 rm -rf openssl-1.0.1p/
 
 echo "export PATH=\$PATH:/usr/local/nginx/sbin" >> ~/.bash_profile
-#htpasswd -bc /web/deploy/etc/htpasswd shitouren Shitouwangzi001
+#htpasswd -bc /web/deploy/server0/etc/htpasswd shitouren Shitouwangzi001
 
 rm -rf /usr/local/nginx/conf/nginx.conf
-ln -s /web/deploy/etc/nginx/nginx.conf /usr/local/nginx/conf/nginx.conf
+ln -s /web/deploy/server0/etc/nginx/nginx.conf /usr/local/nginx/conf/nginx.conf
 
 mkdir -p /usr/local/nginx/conf/nginx.conf.d/
 
 rm -rf /usr/local/nginx/conf/nginx.conf.d/nginx.test.conf
-ln -s /web/deploy/etc/nginx/nginx.test.conf /usr/local/nginx/conf/nginx.conf.d/nginx.test.conf
+ln -s /web/deploy/server0/etc/nginx/nginx.test.conf /usr/local/nginx/conf/nginx.conf.d/nginx.test.conf
 rm -rf /usr/local/nginx/conf/nginx.conf.d/base
-ln -s /web/deploy/etc/nginx/base /usr/local/nginx/conf/nginx.conf.d/base
+ln -s /web/deploy/server0/etc/nginx/base /usr/local/nginx/conf/nginx.conf.d/base
 rm -rf /usr/local/nginx/conf/nginx.conf.d/shitouren
-ln -s /web/deploy/etc/nginx/shitouren /usr/local/nginx/conf/nginx.conf.d/shitouren
+ln -s /web/deploy/server0/etc/nginx/shitouren /usr/local/nginx/conf/nginx.conf.d/shitouren
 

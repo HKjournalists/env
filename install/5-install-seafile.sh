@@ -11,6 +11,9 @@ mv /web/env/soft/seafile-server-4.0.5 /data/seafile/
 cd /data/seafile/seafile-server-4.0.5
 sh setup-seafile-mysql.sh
 
+mkdir -p /root/seafile-client
+./seaf-cli init -d /root/seafile-client
+
 :<<BLOCK
 -----------------------------------------------------------------
 This script will guide you to setup your seafile server using MySQL.
@@ -187,4 +190,5 @@ When problems occur, Refer to
 
 for information.
 BLOCK
+
 

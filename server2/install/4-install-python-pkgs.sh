@@ -126,3 +126,10 @@ python setup.py build
 python setup.py install
 cd /web/env/soft/
 rm -rf skip32-1.6
+
+tar zxvf qiniu-sdk-v7.0.6.tar.gz
+cd python-sdk-7.0.6
+python setup.py build
+python setup.py install
+cd /web/env/soft/
+rm -rf python-sdk-7.0.6

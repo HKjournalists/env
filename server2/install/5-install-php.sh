@@ -42,6 +42,6 @@ make install
 cd /web/env/soft/
 rm -rf php-5.6.7/
 
-ln -s /web/deploy/server1/etc/php/php.ini /usr/local/php/etc/php.ini
-ln -s /web/deploy/server1/etc/php/php-fpm.conf /usr/local/php/etc/php-fpm.conf
+ln -s /web/deploy/server2/etc/php/php.ini /usr/local/php/etc/php.ini
+ln -s /web/deploy/server2/etc/php/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 

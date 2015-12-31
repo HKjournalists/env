@@ -10,5 +10,5 @@ mv mongodb-linux-x86_64-rhel62-3.0.2 /usr/local/mongodb
 cd /web/env/soft/
 
 rm -rf /etc/mongod.conf
-ln -s /web/deploy/server1/etc/mongod.conf /etc/mongod.conf
+ln -s /web/deploy/server2/etc/mongod.conf /etc/mongod.conf
 

@@ -36,5 +36,5 @@ cd /web/env/soft/
 rm -rf httpd-2.4.12/
 
 rm -rf /usr/local/httpd/conf/httpd.conf
-ln -s /web/deploy/server1/etc/httpd/httpd.conf /usr/local/httpd/conf/httpd.conf
+ln -s /web/deploy/server2/etc/httpd/httpd.conf /usr/local/httpd/conf/httpd.conf
 
